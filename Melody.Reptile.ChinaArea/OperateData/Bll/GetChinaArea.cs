@@ -11,8 +11,6 @@ namespace Melody.Reptile.ChinaArea.OperateData.Bll
     {
         string _indexUrl= "http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html";
 
-       
-
         public GetChinaArea()
         {
            
@@ -118,7 +116,7 @@ namespace Melody.Reptile.ChinaArea.OperateData.Bll
                     Console.WriteLine(JoinStr(depth) + "代码：" +codeNum+",区域名称:"+href.InnerText);
 
                     string depurl = url.Replace(parentCode.Substring(0, 2 * (depth - 1)) + ".html", att.Value);
-                    if (depth < 5)//到乡镇即可
+                    if (depth < 5)
                         GetArea(depurl, depth, codeNum,ref maps);
                 }
                 else

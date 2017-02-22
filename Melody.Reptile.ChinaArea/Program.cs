@@ -14,7 +14,6 @@ namespace Melody.Reptile.ChinaArea
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
